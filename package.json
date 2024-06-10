@@ -3,8 +3,8 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "dev-ssl": "NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
-    "dev-test": "nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
+    "dev-test": "NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
+    "dev-ssl": "nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "stackblitz": "npm run dev"
@@ -16,5 +16,8 @@
     "@nuxtjs/tailwindcss": "^6.11.4",
     "@storyblok/nuxt": "^6.0.4",
     "nuxt": "^3.10.2"
+  },
+  "dependencies": {
+    "@splidejs/vue-splide": "^0.6.12"
   }
 }
